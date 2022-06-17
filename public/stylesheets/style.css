@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  --red: #e44e58;
+  --dark-red: #e43956c4;
+  --blue: #0077b5;
+  --gray: rgb(170, 170, 170);
+  --dark-gray: #181a1b;
+  --dark-blue: #002333;
+  --text-color: #fff;
+  --lighter-text: rgb(219, 219, 219);
+  --card-background: #2e3031;
+  --skills-span: rgb(200, 200, 200);
+}
+
+.light-mode {
+  --gray: rgb(107, 107, 107);
+  --dark-gray: white;
+  --text-color: #000;
+  --lighter-text: rgb(37, 37, 37);
+  --card-background: #eeeeee;
+  --skills-span: rgb(61, 61, 61);
+}
+
+.projectcontainer {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 10px; 
+}
+
+.cell {
+  color: rgb(232, 153, 153);
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.cell-1 { 
+  grid-row: 2;  
+}
+
+.resume{
+position: relative;
+top: 100px;
+left: 250px;
+}
+
+a {
+  color: #00B7FF;
+}
+body {
+  background-color: #000000;
+  font-family: px_sans_nouveauxregular;
+  line-height: 36px;   /* within paragraph */
+  margin-bottom: 30px; /* between paragraphs */
+}
+h1 {
+  text-align: center;
+  color: teal;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 40px;
+  /* display: inline-block;
+  margin-left: center;
+  margin-right: center;
+  left: 325px;
+  top: 10px; */
+  /* position: relative; */
+
+}
+
+
+h2{
+  color: white;
+  font-style: bold;
+}
+
+h3 {
+  font-weight: bold;
+  font-style: bold;
+  font-size: 30px;
+}
+
+h6{
+  color: blueviolet;
+}
+
+.typewriter h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+  font-family: 'Anton-Regular';
+  font-size: 90px;
+  text-align: center;
+  position:relative;
+  bottom: -200px;
+  
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+header nav {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 6vh;
+  -webkit-animation: nav-links 0.5s;
+          animation: nav-links 0.5s;
+}
+
+.topnav {
+  background-color: #a30721;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #4395bb;
+}
+
+
+.topnav active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: inline-block;
+}
+
+header nav .logo {
+  color: teal;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header nav .logo span {
+  color: white;
+}
+
+header nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50rem;
+  max-width: 50%;
+  min-width: 30%;
+  z-index: 1000;
+}
+
+header nav .links li {
+  list-style: none;
+}
+
+header nav .links a {
+  color: darkred;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header nav .links .link::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 0;
+  height: 4px;
+  background: whitesmoke;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+header nav .links .link:hover::after {
+  width: 100%;
+}
+
+header nav .hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+header nav .hamburger-menu div {
+  background-color: violet;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+
+p{
+  color: #f2f2f2;
+  text-align: center;
+}
+
+iframe{
+  height: 300px;
+  width: 400px;
+}
+
+.resume iframe{
+  height: 700px;
+  width: 800px;
+}
+.socials {
+  position:relative;
+  bottom: -200px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+
+li{
+  display: inline-block;
+  padding:50px;
+}
+
+.color-toggle-label {
+  margin: -0.2rem;
+  width: 3rem;
+  height: 1.6rem;
+  border-radius: 25px;
+  color: blue;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.color-toggle {
+  width: 1.2em;
+  height: 1.2em;
+  background: var(--dark-gray);
+  position: absolute;
+  border-radius: 50%;
+  top: 0.18rem;
+  left: 0.18rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-toggle-label::before {
+  content: "🌚";
+  /* position: absolute;
+  bottom: 0.25rem;
+  left: 0.2rem;
+  z-index: 1000; */
+  font-size: 0.9rem;
+}
+
+.color-toggle-label::after {
+  content: "🌞";
+  /* position: absolute; */
+  bottom: 0.25rem;
+  right: 0.2rem;
+  z-index: 1000;
+  font-size: 0.9rem;
+}
+
+#color-toggle-input {
+  display: none;
+}
+
+#color-toggle-input:checked ~ label .color-toggle {
+  transform: translateX(1.4rem);
+}
