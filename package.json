@@ -16,5 +16,5 @@
     "react-native": "^0.68.2"
     
   },
-  "engines": { "node": "10.x.y" }
+  "engines": { "node": "14.15.4" }
 }
