@@ -6,14 +6,14 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var text = "Thank You Boost Your Future"
 var app = express();
-
+var text = "Thank You Boost Your Future!!!"
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(logger('dev'));
+app.use(logger('dev'));var imp
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
